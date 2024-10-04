@@ -25,7 +25,7 @@ export default class Pricing {
     if (!(newCurrency instanceof Currency)) {
       throw new TypeError('currency must be a Currency');
     }
-    this.amount = newCurrency;
+    this.currency = newCurrency;
   }
 
   displayFullPrice() {
