@@ -8,6 +8,6 @@ export default function handleProfileSignup(firstName, lastName, filename) {
   ])
     .then((res) => res.map((res) => ({
       status: res.status,
-      value: res.status === 'fulfilled' ? res.value : res.reason,
+      value: res.status === 'fulfilled' ? res.value : String(res.reason),
     })));
 }
