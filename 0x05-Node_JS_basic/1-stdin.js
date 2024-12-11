@@ -1,4 +1,4 @@
-console.log('Welcome to ALX, what is your name?');
+process.stdout.write('Welcome to ALX, what is your name?\n');
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
   if (chunk) {
@@ -7,5 +7,5 @@ process.stdin.on('readable', () => {
 });
 
 process.stdin.on('end', () => {
-  console.log('This important software is now closing');
+  process.stdout.write('This important software is now closing\n');
 });
